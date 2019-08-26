@@ -1,0 +1,20 @@
+recover.txt
+
+pseudocode for recover.c
+
+// open the card.raw file and check for NULL
+
+    //read in 512 bytes from card.raw until you reach EOF
+        //if we find the header pattern of bytes
+            //if we have found the first jpg
+                //change the boolean value
+                //write in the bytes  into a separate file
+        //else
+                //close the previous file
+                //write in the bytes into a new files
+        // else
+            //if we had found the first jpg
+                // countinue to write the bytes
+
+    //close all filesa ndfree the memory used
+    
